@@ -22,6 +22,11 @@ class Quantity{
         this.button_down.addEventListener('click', (evt) => {
             this.reduce();
         });
+        
+        this.input_obj.addEventListener('change', () => {
+            this.update(this.input_obj.value);
+            this._redraw();
+        });
     }
 
     /* Обновление */
